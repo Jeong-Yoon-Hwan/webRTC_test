@@ -17,4 +17,11 @@ const server = http.createServer(app);
 
 const wss = new WebSocket.Server({ server });
 
+wss.on("connection", (socket) => {
+  console.log("Connected to Browser ✅");
+  socket.send("hello!!!");
+});
+
 server.listen(3000, handleListen);
+
+//1.4 Webscoket Message
