@@ -9,5 +9,9 @@ socket.addEventListener("message", (message) => {
 });
 
 socket.addEventListener("close", () => {
-  console.log("Connected from server ");
+  console.log("Discected from server .❌");
 });
+
+setTimeout(() => {
+  socket.send("hello form the browser");
+}, 10000);
