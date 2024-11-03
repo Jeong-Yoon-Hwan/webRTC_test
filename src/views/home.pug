@@ -7,12 +7,9 @@ html(lang="en")
     link(rel="stylesheet", href="https://unpkg.com/mvp.css")
   body 
     header
-      h1 Hello world
+      h1 video
     main 
-      ul
-      form
-        input(type="text", placeholder="write a msg", required)
-        button Send
+      video#myFace(autoplay,playsinline, width="400", height="400" )
+    script(src="/socket.io/socket.io.js")
     script(src="/public/js/app.js")
-
   
