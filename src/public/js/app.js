@@ -29,7 +29,10 @@ function handleMuteClick() {
     muted = false;
   }
 }
-function handleCamerClick() {
+function handleCameraClick() {
+  console.log(cameraOff);
+  s;
+  console.log(myStream.getAudioTracks());
   if (cameraOff) {
     cameraBtn.innerText = "Turn Camera Off";
     cameraOff = false;
@@ -39,6 +42,6 @@ function handleCamerClick() {
   }
 }
 muteBtn.addEventListener("click", handleMuteClick);
-cameraBtn.addEventListener("click", handleCamerClick);
+cameraBtn.addEventListener("click", handleCameraClick);
 
 // 3.1
